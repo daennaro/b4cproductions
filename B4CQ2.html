@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preventing Social media addiction from damaging Teen-Parent Relationships.</title>
+
+        <style>
+            /* custom fonts */
+            @font-face{
+            font-family: Barlow;
+            src: url(BarlowSemiCondensed-SemiBold.ttf);
+            }
+
+            @font-face{
+            font-family: mons;
+            src: url(Montserrat-Light.ttf);
+            }
+
+            /* text styling */
+            h1 {
+                font-family: Barlow;
+                color: #e0cebe;
+            }
+
+            h3 {
+                font-family: Barlow;
+                color: #e0cebe;
+            }
+
+            p {
+                font-family: mons;
+                color: #e0cebe;
+            }
+
+            li {
+                list-style-type: 1;
+                color: #e0cebe;
+                font-family: mons;
+            }
+
+            /* Body styling */
+            body {
+                background-color: #7d685f;
+            }
+
+            /* navbarrrrrrrrrrr */
+            .navbar {
+                display: none;
+                float: left;
+                position: fixed;
+                top: 0;
+                background-color: #7d685f;
+                border-style: solid;
+                border-color: #e0cebe;
+                border-width: 2px;
+                border-radius: 10px;
+                width: 18%;
+                height: 95%;
+                margin-left: 10px;
+            }
+            .innernav {
+                float: left;
+                padding: 20px 10px 10px;
+            }
+
+            .innernav ol {
+                padding-top: 10%;
+            }
+
+            .innernav li {
+                padding-bottom: 7px;
+                font-family: mons;
+            }
+
+            .navbar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                font-size: 50px;
+                padding-left: 50px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: #e0cebe;
+            }
+
+            span {
+                margin-left: 50px;
+                margin-top: 40px;
+                background-color: #7d685f;
+                border-radius: 10px;
+                padding: 5px 5px 5px 5px;
+                font-weight: bold;
+                color: #e0cebe;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #c6bcb4;
+            }
+
+            /* Link Styling */
+            /* unvisited link */
+            a:link {
+                color: #c6bcb4;
+            }
+
+            /* visited link */
+            a:visited {
+                color: #e0cebe;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: #c6bcb4;
+                text-decoration: underline;
+            }
+
+            /* selected link */
+            a:active {
+                color: white;
+            }
+
+            /* text selection */
+            ::selection {
+                color: #7d685f;
+                background: #c6bcb4;
+            }
+
+            /* Scrollbar */
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #7d685f;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                    background: #a8a29c;
+                    border-radius: 6px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #8f8780;
+            }
+
+            /* slidesss */
+            .slide1 {
+                height: auto;
+                background-color: #7d685f;
+                padding: 2% 10% 2% 21%;
+            }
+
+            .slide2 {
+                height: auto;
+                background-color: #7d685f;
+                padding: 2% 10% 2% 21%;
+            }
+
+            .openingimg {
+                height: 100%;
+                width: 100%;
+                margin-bottom: 20px;
+                padding-left: 25%; 
+                padding-right: 40%;
+            }
+
+            /* Table */
+            table {
+                font-family: mons;
+                border-collapse: collapse;
+                width: 100%;
+                background-color: #e0cebe;
+            }
+
+            td, th {
+                border: 3px solid #ffff;
+                text-align: center;
+                padding: 8px;
+            }
+
+            td:hover {background-color: #ffff;}
+            th:hover {background-color: #ffff;}
+
+            /* Image styling */
+            img {
+                border-radius: 5px;
+            }
+
+            .poster:hover {
+                height: 490px;
+                width: 344px;
+                border-style: dashed;
+                border-color: #ffff;
+            }
+
+            /* SOCIAL MEDIA HOLDER */
+            #smh {
+                border: none;
+                background-color: #7d685f;
+            }
+
+            #smh:hover {
+                background-color: #7d685f;
+            }
+        
+
+.topnavCON {
+    width: auto;
+    height: auto;
+    background-color:#5d4941;
+    display: block;
+    position: absolute;
+}
+
+.topnavINN {
+    width: auto;
+    height: 65px;
+    display: block;
+    background-color:#5d4941;
+    padding: 0.5% 0% 0% 0%;
+}
+
+.topnavINN li {
+    padding: 1% 2.5% 1% 2.5%;
+    float: left;
+    font-size: auto;  
+}
+
+.topnavINN ul {
+    list-style-type: none;
+}
+
+#paging:hover {
+    background-color: #e0cebe;
+}
+.topnavINN li:hover {
+    color: #5d4941;
+}
+        </style>
+    </head>
+    <body>
+        <!--SLIDE IMAGE-->
+        <div class="openingimg">
+            <img src="https://drive.google.com/uc?export=view&id=1OL3P2LVmfQgLC__MUAcgAo_nU3p0QuUE" height="60%" width="60%">
+        </div>
+<!--topnav-->
+<div clas="topnavCON">
+    <div class="topnavINN">
+            <ul>
+                <a href="B4CQ1.html"><li id="paging">Quarter 1</li></a>
+                <a href="B4CQ2.html" ><li id="paging">Quarter 2</li></a>
+                <a href="B4CQ3.html" ><li id="paging">Quarter 3</li></a>
+                <a href="B4CQ4.html"><li id="paging">Quarter 4</li></a>
+            </ul>
+    </div>
+        <!--Sidenav-->
+        <div class="navbar" id="mySidenav">
+            <div class="innernav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ol>
+                    <a href="#1" style="color: #e0cebe;"><li>Stream Outline/Plan</li></a>
+                    <a href="#2" style="color: #e0cebe;"><li>Promotional Plan: Posters</li></a>
+                    <a href="#3" style="color: #e0cebe;"><li>Promotional Plan: Videos</li></a>
+                    <a href="#4" style="color: #e0cebe;"><li>Find us in</li></a>
+                    <a href="#6" style="color: #e0cebe;"><li>Team</li></a>
+                </ol>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer;font-family:Barlow;" onclick="openNav()">&#9776; OPEN</span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            }
+        </script>
+
+        <div class="slide1"></div>
+
+        <div class="slide1">
+            <h1 id="1">Stream Outline/Plan:</h1>
+
+            <table>
+  <tr>
+    <th>Topic</th>
+    <th>Activity</th>
+    <th>Time</th>
+    <th>Time<br>Allotment(mins)</th>
+    <th>Source</th>
+    <th>Audio</th>
+  </tr>
+  <tr>
+    <td>How teen-parent relatioship are affected by TikTok addiction</td>
+    <td>Introduction to the topic</td>
+    <td>5:00 - 5:10PM</td>
+    <td>10</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>How social media affects people's relationships</td>
+    <td>Breakdown of topic</td>
+    <td>5:10 - 5:25PM</td>
+    <td>15</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>Possible social media sites that people tend to become addicted to</td>
+    <td>Breakdown of topic</td>
+    <td>5:25 - 5:30PM</td>
+    <td>5</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>How TikTok can become addictive</td>
+    <td>Breakdown of topic</td>
+    <td>5:30 - 5:45 PM</td>
+    <td>15</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>How Tiktok addiction can ruin a person's relationships</td>
+    <td>Breakdown of topic</td>
+    <td>5:45 - 6:00 PM</td>
+    <td>15</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>How TikTok addiction can ruin a teens relationship with their relationship</td>
+    <td>Breakdown of topic</td>
+    <td>6:00 - 6:30</td>
+    <td>30</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+  <tr>
+    <td>Viewer asks Questions</td>
+    <td>Closing remarks and viewer interaction</td>
+    <td>6:30 - 6:45 PM</td>
+    <td>15</td>
+    <td>Video</td>
+    <td>Video <br>Audio/mic</td>
+  </tr>
+</table>
+
+<h3>The stream will start at 5PM where our target audience (Teenagers/Adolescents) will most Likely be free to watch. The introduction will start with the members introducing the topic of our stream for 10 minutes.</h3>
+
+<p>The stream will then continue to breaking down the topic to the audience, starting from:</p>
+
+<ol>
+  <li>How social media affects people's relationships.</li>
+  <li>Possible social media sites that people tend to become addicted to.</li>
+  <li>How Tiktok can become addictive.</li>
+  <li>How Tiktok addiction can ruin a person's relationships.</li>
+  <li>How Tiktok can ruin a teen's relationship with their parents.</li>
+</ol>  
+
+<h3>After breaking down the topic to the audience by laying our and presenting the research done on the topic, we will proceed to entertain the viewers questions and comments.</h3>
+        </div>
+
+        <div class="slide2">
+            <h1 id="2">PROMOTIONAL PLAN: Posters</h1>
+
+            <h3>
+                Our chosen platform for promoting our stream is Instagram considering how much people use Instagram and crowd the social media platform, we will be using its popularity and large numbers of users to our advantage.
+            </h3>
+            
+            <img class="poster" src="https://drive.google.com/uc?export=view&id=1p1_rLs6J_FBsBnK2-NIUUpCLNEUbfTn3" style="align-items:left;" height="480px" width="334px">
+            <img class="poster" src="https://drive.google.com/uc?export=view&id=1PXsFlGjddIVv3TPMlN3SRp3f7JOEbaBM" style="align-items:right;" height="480px" width="334px">
+
+            <h3>
+                The images above are the created promotional posters for our stream where we invite anybody who are interested to join into our discussion about the topic.
+            </h3>
+
+        </div>
+
+        <div class="slide1">
+            <h1 id="3">PROMOTIONAL PLAN: Video</h1>
+                <iframe src="https://drive.google.com/file/d/1itGRbHLzLnDfCQ8O89cypcA0t0uQhAlk/preview" width="742px" height="400px" controls></iframe>
+            <h3>
+                The video above is our promotional video. The chosen genre or theme of our promotional being a thriller as it can easily catch the attention of anyone who comes across it and keep their attention as the suspense pulls them in.
+            </h3>
+
+        </div>
+
+        <div class="slide2">
+            <h1 id="4">FIND US IN</h1>
+
+            <table id="smh">
+                <tr id="smh">
+                    <td id="smh">
+                        <a href="https://www.youtube.com/@B4C-Network" target="_blank" rel="noopener noreferrer">
+                            <img src="https://i.pinimg.com/736x/8e/0c/c1/8e0cc1e5cab442f400ea78d01c45aff7.jpg" width="250px" height="250px" alt="Click to see our YouTube Channel!">
+                        </a>
+                    </td>
+                    
+
+                    <td id="smh">
+                        <a href="https://www.instagram.com/b4cnetwork/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://seeklogo.com/images/I/instagram-logo-8B42D89FF5-seeklogo.com.png" width="250px" height="250px" alt="Click to see our Instagram!">
+                        </a>
+                    </td>
+                </tr>
+                <tr id="smh">
+                    <td id="smh"><h3>B4C Network Youtube</h3></td>
+                    <td id="smh"><h3>B4C Network Instagram</h3></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="slide2">
+            <h1 id="6">TEAM</h1>
+
+            <h3>Klyde Cagas</h3>
+            <p>ap.klyde.cagas@apecschools.edu.ph</p>
+            <br>
+            <h3>Lance Timothy Catindig</h3>
+            <p>ap.lancetimothy.catinding@apecschools.edu.ph</p>
+            <br>
+            <h3>Rodaenna Jhodel Cruz</h3>
+            <p>ap.rodaennajhodel.cruz@apecschools.edu.ph</p>
+            <br>
+            <h3>Trisha Allaine Bernardo</h3>
+            <p>ap.trishaallaine.bernardo@apecschools.edu.ph</p>
+            <br>
+            <h3>Janica Catbagan</h3>
+            <p>ap.janica.catbagan@apecschools.edu.ph</p>
+            <h3>Marie Jane Nuada</h3>
+            <p>ap.mariejane.nuada@apecschools.edu.ph</p>
+        </div>
+    </body>
+</html>

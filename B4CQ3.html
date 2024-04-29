@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preventing Social media addiction from damaging Teen-Parent Relationships.</title>
+
+        <style>
+            
+
+            /* custom fonts */
+            @font-face{
+            font-family: Barlow;
+            src: url(BarlowSemiCondensed-SemiBold.ttf);
+            }
+
+            @font-face{
+            font-family: mons;
+            src: url(Montserrat-Light.ttf);
+            }
+
+            /* text styling */
+            h1 {
+                font-family: Barlow;
+                color: #e0cebe;
+            }
+
+            h3 {
+                font-family: Barlow;
+                color: #e0cebe;
+            }
+
+            p {
+                font-family: mons;
+                color: #e0cebe;
+            }
+
+            li {
+                list-style-type: 1;
+                color: #e0cebe;
+                font-family: mons;
+            }
+
+            /* Body styling */
+            body {
+                background-color: #7d685f;
+            }
+
+            /* navbarrrrrrrrrrr */
+            .navbar {
+                display: none;
+                float: left;
+                position: fixed;
+                top: 0;
+                background-color: #7d685f;
+                border-style: solid;
+                border-color: #e0cebe;
+                border-width: 2px;
+                border-radius: 10px;
+                width: 18%;
+                height: 95%;
+                margin-left: 10px;
+            }
+            .innernav {
+                float: left;
+                padding: 20px 10px 10px 0px;
+            }
+
+            .innernav ol {
+                padding-top: 10%;
+                list-style-type: none;
+            }
+
+            .innernav li {
+                padding-bottom: 7px;
+                font-family: mons;
+            }
+
+            .navbar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                font-size: 50px;
+                padding-left: 50px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: #e0cebe;
+            }
+
+            span {
+                margin-left: 50px;
+                padding-top: 50px;
+                background-color: #7d685f;
+                border-radius: 10px;
+                padding: 5px 5px 5px 5px;
+                font-weight: bold;
+                color: #e0cebe;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #c6bcb4;
+            }
+
+            /* Link Styling */
+            /* unvisited link */
+            a:link {
+                color: #c6bcb4;
+                text-decoration: none;
+            }
+
+            /* visited link */
+            a:visited {
+                color: #e0cebe;
+                text-decoration: none;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: #c6bcb4;
+                text-decoration: underline;
+            }
+
+            /* selected link */
+            a:active {
+                color: white;
+                text-decoration: none;
+            }
+
+            /* text selection */
+            ::selection {
+                color: #7d685f;
+                background: #c6bcb4;
+            }
+
+            /* Scrollbar */
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #7d685f;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                    background: #a8a29c;
+                    border-radius: 6px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #8f8780;
+            }
+
+            /* slidesss */
+            .slide1 {
+                height: auto;
+                background-color: #7d685f;
+                padding: 2% 10% 2% 21%;
+                
+            }
+            .slide1 p {
+                text-indent: 50px;
+            }
+            .slide2 {
+                height: auto;
+                background-color: #7d685f;
+                padding: 2% 10% 2% 21%;
+            }
+            .slide2 p {
+                text-indent: 50px;
+            }
+
+            .slide3 {
+                height: auto;
+                background-color: #7d685f;
+                padding: 2% 10% 2% 21%;
+            }
+
+            .openingimg {
+                height: 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .topnavCON {
+                width: auto;
+                height: auto;
+                background-color:#5d4941;
+                display: block;
+                position: absolute;
+            }
+
+            .topnavINN {
+                width: auto;
+                height: 65px;
+                display: block;
+                background-color:#5d4941;
+                padding: 0.5% 0% 0% 0%;
+            }
+
+            .topnavINN li {
+                padding: 1% 2.5% 1% 2.5%;
+                float: left;
+                font-size: auto;  
+            }
+
+            .topnavINN ul {
+                list-style-type: none;
+            }
+
+            #paging:hover {
+                background-color: #e0cebe;
+            }
+            .topnavINN li:hover {
+                color: #5d4941;
+            }
+
+            /* Table */
+            table {
+                font-family: mons;
+                border-collapse: collapse;
+                width: 100%;
+                background-color: #e0cebe;
+            }
+
+            td, th {
+                border: 3px solid #ffff;
+                text-align: center;
+                padding: 8px;
+            }
+
+            td:hover {background-color: #ffff;}
+            th:hover {background-color: #ffff;}
+
+            /* Image styling */
+            img {
+                border-radius: 5px;
+            }
+
+            .poster:hover {
+                height: 490px;
+                width: 344px;
+                border-style: dashed;
+                border-color: #ffff;
+            }
+
+            /* SOCIAL MEDIA HOLDER */
+            #smh {
+                border: none;
+                background-color: #7d685f;
+            }
+
+            #smh:hover {
+                background-color: #7d685f;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--SLIDE IMAGE-->
+        <div class="openingimg">
+            <img src="B4C_Podcasts.png" height="60%" width="60%" style="padding: 0px 0px 0px 350px">
+        </div>
+<!--topnav-->
+<div clas="topnavCON">
+    <div class="topnavINN">
+            <ul>
+                <a href="B4CQ1.html"><li id="paging">Quarter 1</li></a>
+                <a href="B4CQ2.html" ><li id="paging">Quarter 2</li></a>
+                <a href="B4CQ3.html" ><li id="paging">Quarter 3</li></a>
+                <a href="B4CQ4.html"><li id="paging">Quarter 4</li></a>
+            </ul>
+        
+            </div>
+        </div>
+
+        <!--Sidenav-->
+        <div class="navbar" id="mySidenav">
+            <div class="innernav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ol>
+                    <a href="#1" style="color: #e0cebe;"><li>I. Summary of Stream</li></a>
+                    <a href="#2" style="color: #e0cebe;"><li>II. Section Two Title</li></a>
+                    <a href="#3" style="color: #e0cebe;"><li>III. Section Three Title</li></a>
+                    <a href="#5" style="color: #e0cebe;"><li>IV. Section Four Title</li></a>
+                    <a href="#11" style="color: #e0cebe;"><li>V. Section Five Title</li></a>
+                    <a href="#7" style="color: #e0cebe;"><li>Views During Stream</li></a>
+                    <a href="#8" style="color: #e0cebe;"><li>Traffic Source</li></a>
+                    <a href="#9" style="color: #e0cebe;"><li>Audience Viewership</li></a>
+                    <a href="#10" style="color: #e0cebe;"><li>Subscription Status During Stream</li></a>
+                    <a href="#4" style="color: #e0cebe;"><li>Find us in</li></a>
+                    <a href="#6" style="color: #e0cebe;"><li>Team</li></a>
+                </ol>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer;font-family:Barlow;" onclick="openNav()">&#9776; OPEN</span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            }
+        </script>
+
+        <div class="slide1"></div>
+
+    </script>
+
+    <div class="slide1"></div>
+
+    <div class="slide1">
+        <h1 id="1">I. Summary of Stream</h1>
+        <p>The stream started exactly at the  given time of 3:30 P.M. The streamers followed the flow of the stream by introducing the speakers and then breaking down given topic such as: How teen-parent relationship are affected by TikTok addiction, How social media affects people's relationships, Possible social media sites that people tend to become addicted to, How TikTok can become addictive, How Tiktok addiction can ruin a person's relationships, How TikTok addiction can ruin a teens relationship with their relationship, and of course the Q&A. The stream has  gained a lot of viewers during the live stream, hitting over 81 views, which gave the streamer a lot of interactions with the viewers  as they gave their thoughts about the topic on the comment box. The stream went well,  and as a first time streamer, the stream had gone above the expectations, despite having minor issues on some members microphones, the speakers saved the stream by jumping onto each other's topic sharing thoughts as if they were talking casually, which made the stream entertaining as they  are not only speaking to each other but also to  the viewers. 
+        </p>
+
+
+
+
+
+    </div>
+
+    <div class="slide2">
+        <h1 id="2">II. Section Two Title</h1>
+        <p>The stream flowed smoothly, everyone was speaking confidently and they were clear enough for the audience to understand what they were saying although there were some mistakes such as an unexpected switching to Tagalog by one speaker (though just a single word slipped in) and another struggling to get their point across. But, despite the mistakes that were made, most of the hosts were able to improvise making the livestream a success.  Most of us were also able to get our point and the information we have gathered through our research to the viewers, which also allowed us to get interactions with the viewers when it came to entertaining their questions about any issues that had to do with TikTok addiction. Overall, the stream went great in terms of content, specifically getting the information across and how we were able to entertain our viewers by the end of the stream.
+        </p>
+
+    </div>
+
+    <div class="slide1">
+        <h1 id="3">III. Section Three Title</h1>
+        <p>After a complete review of our stream, not only did we see some strengths but also areas of opportunity. Areas of opportunities in terms of stream layout design, video/audio quality, and engagement of the viewers. First off, we had a problem with the chat box display. Not all messages could fit into the chat box and there were issues with the chroma key such as the other colors blending in when they are not supposed to. This can be viewed as a distraction instead of a good design layout. Second, the video/audio was good enough but there are scenes where parts of an audio from the person speaking are not heard which makes for viewers to not hear them properly. The video quality is already viewable but it can be improved as the quality is 720p but it can be further improved to at least 1080p or possibly even 4k. The Internet speed can greatly affect the stream quality as there are some scenes where the stream freezes or is reduced down to 360p, so having an improvement on it can greatly boost the stream quality. Lastly, during our stream, the only engagement we had with the viewers was during the Q&A part. The engagement improvement may be necessary, as the stream’s viewership may be affected since the boredom of a viewer may result in them leaving. Finding ways to interact or make the stream more fun for the viewers would be something that could be improved.
+        </p>
+    </div>
+    <div class="slide2">
+        <h1 id="5">IV. Section Four Title</h1>
+        <p>During our stream we had a total of 81 views, most of which were very interactive. They would add their insights and ask a lot of questions during the Q&A of our stream. The questions and inputs of our viewers really allowed us to dive deeper into the topic and answer questions that were relevant to the viewers. Things like how they can help a family member who deals with TikTok addiction, how to fix the relationship of the teenager with their parent, or how they can deal with certain situations that include TikTok addiction. The questions of the viewers challenged our knowledge of the topic and to share what we have learned and researched to help the viewers who asked or to at least give our suggestion on their issue. Being able to do this allowed us to accomplish one of the goals of our research which is to help teenagers overcome their challenges with TikTok addiction whether it be the individual themselves or someone in their life.</p>
+        <p>Although our high viewer interaction was in the Q&A, the earlier stages of our stream barely had any viewer interaction and may have left most bored and affected the experience for the viewers.
+        </p>
+
+    </div>
+    <div class="slide1">
+        <h1 id="11">V. Section Five Title</h1>
+        <p>During our stream we had high viewership because we sent our YouTube link to the people we know and we posted every now and then. Doing those things allowed us to be able to gain more viewers and catch more attention from people who may be interested in our stream or topic. Posting every now and then or posting updates on our stream allowed us to increase the reach of our promotion and to catch more people to join our stream. We also sent the link to our YouTube stream to people we know so that they could watch our stream.
+        </p>
+    </div>
+        </div>
+       
+        <div class="slide1">
+            <h1 id="7">Views During Stream</h1>
+            <table style="width:100%">
+                <tr>
+                    <th>Views </th>
+                    <th>Impressions</th>
+                    <th>Impressions click-through rate</th>
+                    <th>Average View Duration</th>
+                  </tr>
+                  <tr>
+                    <td>81</td>
+                    <td>405</td>
+                    <td>7.2%</td>
+                    <td>1:50</td>
+                  </tr> 
+            </table>
+
+            <h1 id="8">Traffic Source</h1>
+            <table style="width:100%">
+                <tr>
+                    <th> </th>
+                    <th>Views</th>
+                    <th>Watch Time (Hours)</th>
+                    <th>Average View Duration</th>
+                    
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td>81</td>
+                    <td>2.5</td>
+                    <td>1:50</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Channel pages</td>
+                    <td>23 (28.4%)</td>
+                    <td>0.4 (15.0%)</td>
+                    <td>0:58</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Other YouTube features</td>
+                    <td>20 (24.7%)</td>
+                    <td>1.1 (43.1%)</td>
+                    <td>3:11</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Browse features</td>
+                    <td>14 (17.3%)</td>
+                    <td>0.9 (35.1%)</td>
+                    <td>3:43</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Direct or unknown</td>
+                    <td>12 (14.8%)</td>
+                    <td>0.0 (1.9%)</td>
+                    <td>0:13</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>YouTube search</td>
+                    <td>9 (11.1%)</td>
+                    <td>0.1 (4.5%)</td>
+                    <td>0:44</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>External</td>
+                    <td>3 (3.7%)</td>
+                    <td>0.0 (0.5%)</td>
+                    <td>0:13</td>
+                    
+                  </tr>
+                
+
+            </table>
+        </table>
+
+        <h1 id="9">Audience Viewership</h1>
+        <table style="width:100%">
+            <tr>
+                <th>Gender</th>
+                <th>Views</th>
+                <th>Average View Duration</th>
+                <th>Average percentage viewed</th>
+                <th>Watch time (hours)</th>
+                
+              </tr>
+              <tr>
+                <td>Female</td>
+                <td>47.6%</td>
+                <td>0:07</td>
+                <td>0.2%</td>
+                <td>10.8%</td>
+                </tr>
+                <tr>
+                    <td>Male</td>
+                    <td>52.4%</td>
+                    <td>0:56</td>
+                    <td>1.7%</td>
+                    <td>89.3%</td>
+                </tr>
+
+                    </table>
+                    <h1 id="10">Subscription Status During Stream</h1>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Subscription Status</th>
+                            <th>Views</th>
+                            <th>Watch time (hours)</th>
+                            <th>Average View Duration</th>
+                            
+                          </tr>
+                          <tr>
+                            <td>Total</td>
+                            <td>81</td>
+                            <td>2.5</td>
+                            <td>1:50</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Not Suscribed</td>
+                                <td>60 (74.1%)</td>
+                                <td>1.9 (74%)</td>
+                                <td>1:49</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Suscribed</td>
+                                <td>21 (25.9%)</td>
+                                <td>0.6 (26%)</td>
+                                <td>1:50</td>
+                                
+                            </tr>
+            
+            
+                                </table>
+                    
+
+
+        </div>
+        
+
+        <div class="slide2">
+            <h1 id="4">FIND US IN</h1>
+
+            <table id="smh">
+                <tr id="smh">
+                    <td id="smh">
+                        <a href="https://www.youtube.com/@B4C-Network" target="_blank" rel="noopener noreferrer">
+                            <img src="https://i.pinimg.com/736x/8e/0c/c1/8e0cc1e5cab442f400ea78d01c45aff7.jpg" width="250px" height="250px" alt="Click to see our YouTube Channel!">
+                        </a>
+                    </td>
+                    
+
+                    <td id="smh">
+                        <a href="https://www.instagram.com/b4cnetwork/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://seeklogo.com/images/I/instagram-logo-8B42D89FF5-seeklogo.com.png" width="250px" height="250px" alt="Click to see our Instagram!">
+                        </a>
+                    </td>
+                </tr>
+                <tr id="smh">
+                    <td id="smh"><h3>B4C Network Youtube</h3></td>
+                    <td id="smh"><h3>B4C Network Instagram</h3></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="slide3">
+            <h1 id="6">TEAM</h1>
+
+            <h3>Klyde Cagas</h3>
+            <p>ap.klyde.cagas@apecschools.edu.ph</p>
+            <br>
+            <h3>Lance Timothy Catindig</h3>
+            <p>ap.lancetimothy.catinding@apecschools.edu.ph</p>
+            <br>
+            <h3>Rodaenna Jhodel Cruz</h3>
+            <p>ap.rodaennajhodel.cruz@apecschools.edu.ph</p>
+            <br>
+            <h3>Trisha Allaine Bernardo</h3>
+            <p>ap.trishaallaine.bernardo@apecschools.edu.ph</p>
+            <br>
+            <h3>Janica Catbagan</h3>
+            <p>ap.janica.catbagan@apecschools.edu.ph</p>
+            <br>
+            <h3>Marie Jane Nuada</h3>
+            <p>ap.mariejane.nuada@apecschools.edu.ph</p>
+        </div>
+    </body>
+</html>
